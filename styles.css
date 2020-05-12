@@ -1,0 +1,300 @@
+body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+#pageWrapper{
+    position: relative;
+    width: 100%;
+
+}
+
+/* Header Section */
+
+.header{
+    position: fixed;
+    text-align: center;
+    top: 0px;
+    z-index: 1000;
+    color: #fff;
+    width: 100%;
+    height: 85px;
+}
+
+.headerInner{
+    padding-left: 30px;
+    padding-right: 30px;
+    position: relative;
+}
+
+/* NavBar Section */
+
+.logo{
+    float: left;
+    text-align: left;
+    display: inline-block;
+    padding: 37px 15px;
+    color: #fff;
+}
+
+.navBar{
+    position: static;
+    float: right;
+    /* display: block; */
+
+}
+
+a.nav{
+    text-decoration: none;
+    color: #fff;
+
+}
+
+a.nav:hover{
+    color: darkorchid;
+    font-weight: bold;
+}
+
+/* .navbar-default{
+    transition: 500ms ease;
+    color: #fff;
+} */
+
+/* .headerInner.scrolled{
+    color: darkorchid;
+} */
+
+.navBar ul li{
+    display: inline-block;
+    color: #fff;
+    list-style: none;
+    text-align: left;
+    position: relative;
+    padding: 37px 15px;
+}
+
+.navBarInner{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#navLink{
+    color: #fff;
+
+}
+
+/* Intro Section */
+
+#intro{
+    /* position: relative; */
+    overflow: hidden;
+    width: 100vw;
+}
+
+.backPicture {
+    background: url("https://images.unsplash.com/photo-1538370965046-79c0d6907d47?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80")
+      no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+.introContent{
+    display: table;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+
+.introContentInner{
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.introTitle{
+    font-size: 90px;
+    margin-top: 40px;
+    font-weight: 400;
+    line-height: 1.1;
+    color: #fff;
+}
+
+.introNameText{
+    font-weight: 300;
+    font-family: 'Archivo Narrow', sans-serif;
+    text-shadow: 5px 5px 5px darkblue;
+    -webkit-font-smoothing: antialiased;
+}
+
+h5.introSubText{
+    font-size: 17px;
+    color: #fff;
+    font-family: 'Archivo Narrow', sans-serif;
+    text-shadow: 4px 4px 4px darkblue;
+}
+
+/* About Me Section */
+
+.sectionPadding{
+  padding-top: 120px;  
+  padding-bottom: 120px;
+}
+
+.mb-60{
+    margin-bottom: 60px !important;
+}
+
+h2{
+   font-size: 52px; 
+   font-family: 'Archivo Narrow', sans-serif;
+   color: black;
+   text-shadow: 2px 2px 2px darkorchid;
+}
+
+.lead{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/* Divider Section */
+
+hr{
+    border: 0;
+    height: 50px;
+    background: url(https://images.unsplash.com/photo-1465101162946-4377e57745c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1657&q=80);
+}
+
+/* Portfolio Section */
+
+.rows{
+    position: relative;
+    height: 529.75px;;
+}
+
+.portfolio-grid .portfolio-item{
+    position: relative;
+    float: left;
+    width: 33.33333333333333%;
+    height: auto;
+    margin: 0px;
+    padding: 15px;
+    display: block;
+}
+
+.portfolio-box{
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-box .portfolio-image-wrap{
+    display: block;
+    -webkit-transition: all 0.3s ease 0s;
+}
+
+.portfolio-box .portfolio-image-wrap img{
+    width: 100%;
+}
+
+.portfolio-box .portfolio-caption-mask{
+    background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    width: 100%;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    z-index: 9;
+}
+
+.portfolio-box .portfolio-caption-mask .portfolio-caption-text{
+    bottom: -60px;
+    left: 0;
+    opacity: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: absolute;
+    text-align: left;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+h5.alt-title{
+    color: darkblue;
+    margin-bottom: 5px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.portfolio-caption-tb-cell p{
+    color: darkorchid;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+/* .portfolio-box .portfolio-caption-mask p{
+    margin-bottom: 0px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    font-weight: 400;
+    margin-top: 0px;
+} */
+
+/* Contact Section */
+
+.banner{
+    padding: 100px 0;
+    background: url(https://images.unsplash.com/photo-1464802686167-b939a6910659?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1466&q=80);
+    background-size: cover:
+}
+
+.content3{
+    background-color: rgba(248,248,248, 0.67);
+    border-radius: .5em;
+    padding: 1em;
+    color: #000000;
+}
+
+#contactChat{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.contactBanter{
+    vertical-align: middle;
+    color: #fff;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 65px;
+    text-shadow: 5px 5px 5px darkblue;
+}
+
+/* Footer Section */
+
+.footer .social li a{
+    display: block;
+    font-size: 14px;
+    height: 30px;
+    line-height: 28px;
+    text-align: center;
+    width: 30px;
+    color: black;
+    padding-top: 10px;
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
