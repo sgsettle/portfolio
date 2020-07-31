@@ -34,12 +34,12 @@
 //     }
 // });
 
-// jQuery(document).ready(function($){
-//     $(window).scroll(function() {
-//         if ($(this).scrollTop() > 345) {
-//             $('.header').css("color", "purple");
-//         } else {
-//             $('.header').css("color", "#fff");
-//         }
-//     })
-// });
+jQuery(document).ready(function($){
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 345) {
+            $('.header').css("color", "#800080");
+        } else {
+            $('.header').css("color", "#fff");
+        }
+    })
+});
