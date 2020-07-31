@@ -20,3 +20,26 @@
 // window.scroll(function(){
 	
 // });
+
+// let header = $('header'),
+// minScroll = 345;
+
+// $(window).scroll(function () {
+//     let scrollTop = $(this).scrollTop();
+
+//     if (scrollTop > minScroll) {
+//         header.addClass('compact');
+//     } else {
+//         header.removeClass('compact');
+//     }
+// });
+
+// jQuery(document).ready(function($){
+//     $(window).scroll(function() {
+//         if ($(this).scrollTop() > 345) {
+//             $('.header').css("color", "purple");
+//         } else {
+//             $('.header').css("color", "#fff");
+//         }
+//     })
+// });
