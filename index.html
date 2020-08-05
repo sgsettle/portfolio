@@ -22,7 +22,7 @@
     <div id="pageWrapper">
 
     <!-- Header Section -->
-    <header id="header" class="header headerFixed">
+    <header class="header scrolledHeader">
         <nav class="navbar-default">
         <div class="headerInner">
             <!-- Name -->
@@ -54,6 +54,7 @@
     <!-- Intro Section -->
     <section id="intro" class="intro">
         <div class="backPicture"> 
+            <div id="canvas"></div>
             <div class="introContent">
                 <div class="introContentInner">
                     <h1 class="introTitle">
@@ -75,7 +76,7 @@
                             </a>
                         </li>
                     </ul>
-                </div>
+                </div> 
             </div>
         </div>
     </section>
@@ -88,13 +89,28 @@
       <div class="container">
           <div class="row">
               <div class="col-md-4 mb-sm-30">
-                  <p class="lead">Hello! My name is Slayde Settle. I am a Web Development graduate and currently enrolled in the Software Development program at Eleven Fifty Academy. </p>
+                  <p class="lead">Hello! I am Slayde Settle. I am a recent Web Development graduate of Eleven Fifty Academy and currently enrolled in the Software Development program. In the web development program, I gained skills in: </p>
+                  <ul id="techSkills">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React Native and Legacy</li>
+                    <li>PostgreSQL</li>
+                    <li>Typescript</li>
+                    <li>And more!</li>
+                  </ul>
               </div>
               <div class="col-md-4 mb-sm-30">
-                  <p class="lead">I have a bachelor's degree in Telecommunications from University of Southern Indiana. I am currently a hair stylist in Brownsburg, IN but have learned that it isn't really what I am looking for.</p>
+                  <p class="lead">On top of my education with Eleven Fifty Academy, I have a bachelor’s degree in Telecommunication from University of Southern Indiana and a Cosmetology license.</p>
+
+                  <p class="lead">I am currently a hair designer transitioning into web and software development. I am always looking to learn new skills and pride myself on picking them up quickly and efficiently. I am creative, ambitious, and self-driven.</p>
               </div>
               <div class="col-md-4">
-                  <p class="lead">I am thrilled to be enrolled at Eleven Fifty Academy and getting the opportunity to move forward in a new career!</p>
+                  <p class="lead">I am currently expanding on the skills I have learned in the web development program and also learning C#. Also, I am working on new projects like building a website for a local restaurant and creating an animal shelter page.</p>
+
+                  <p class="lead">I would be delighted to find a job where I can exercise my artistic eye while implementing the skills I have learned through Eleven Fifty Academy.</p>
+
+                  <p class="lead"><a class="aboutContact" href="#contact">Contact me</a> and let’s see how I can contribute to your company!</p>
               </div>
           </div>
       </div>
@@ -111,7 +127,7 @@
             <h2 class="mb-60">My Portfolio</h2>
         </div>
         <div class="container">
-            <div class="rows portfolio-grid gallery-popup" style="postion: relative; height: 529.75px;">
+            <div class="rows portfolio-grid gallery-popup" style="position: relative; height: 529.75px;">
                 <!-- First Portfolio Item -->
                 <div class="potfolio-item" style="position:absolute; left: 0px; top: 0px;">
                 <div class="potfolio-box">
@@ -249,7 +265,21 @@
     </footer>
 </div>
     <!-- Optional JavaScript -->
-    <script type="text/javascript" src="./script.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <!-- <script>
+        $(window).scroll(function() {
+            $('header').toggleClass('scrolled', $(this).scrollTop() > 423);
+        });
+    </script> -->
+    <script>
+        $(window).scroll(function() {
+            if($(this).scrollTop() > 423) {
+                $('.scrolledHeader').addClass('navColor');
+            } else {
+                $('.scrolledHeader').removeClass('navColor');
+            }
+        });
+    </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

@@ -23,8 +23,9 @@ body{
     height: 85px;
 }
 
-header.compact nav {
-    color: purple;
+.scrolledHeader.navColor {
+    color: purple !important;
+
 }
 
 .headerInner{
@@ -46,7 +47,7 @@ header.compact nav {
 .navBar{
     position: static;
     float: right;
-    /* display: block; */
+    display: block;
 
 }
 
@@ -111,6 +112,8 @@ a.nav:hover{
     padding: 0 !important;
   }
 
+
+
 .introContent{
     display: table;
     height: 100%;
@@ -167,6 +170,15 @@ h2{
 .lead{
     font-size: 18px;
     font-weight: 300;
+}
+
+#techSkills {
+    color: rebeccapurple;
+    font-size: 18px;
+}
+
+.aboutContact {
+    color: rebeccapurple;
 }
 
 /* Divider Section */
