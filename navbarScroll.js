@@ -1,3 +1,31 @@
+// $(window).scroll(function() {
+// 	var vpHeight = $(window).height();
+//         var isWhite = false;
+//         $(".whiteBG").each(function(i, section) {
+//             if(isWhite) {
+//     	        return;
+//             }
+//   	   var offset = $(section).offset().top - $(window).scrollTop();
+//            if(((offset + vpHeight) >= 0) && ((offset + vpHeight) <= vpHeight)) {
+//               isWhite = true;
+//               return;
+//            }
+//        });
+//        $(".navBarInner").css("color", isWhite ? "white" : "darkviolet");
+// });
+
+// $(document).ready(function(){       
+//     var scroll_pos = 0;
+//     $(document).scroll(function() { 
+//         scroll_pos = $(this).scrollTop();
+//         if(scroll_pos > 210) {
+//             $('.header').css('color', '#9400d3');
+//         } else {
+//             $('.header').css('color', '#fff');
+//         }
+//     });
+// });
+
 // window.onscroll = () => {
 //     const nav = document.querySelector('.headerInner');
 //     if(this.scrollY <= 250){

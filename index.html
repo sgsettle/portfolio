@@ -22,7 +22,7 @@
     <div id="pageWrapper">
 
     <!-- Header Section -->
-    <header class="header scrolledHeader">
+    <header class="header">
         <nav class="navbar-default">
         <div class="headerInner">
             <!-- Name -->
@@ -60,7 +60,7 @@
                     <h1 class="introTitle">
                         <span class="introNameText">Slayde Settle</span>
                     </h1>
-                    <h5 class="introSubText">JavaScript Web Developer</h5>
+                    <h5 class="introSubText">Fullstack Web Developer</h5>
                     <br>
                     <ul class="list-inline intro-social-buttons">
                         <li class="list-inline-item">
@@ -83,7 +83,7 @@
 
     <!-- About Section -->
     <section id="about" class="sectionPadding">
-      <div class="container text-center">
+      <div class="container text-center whiteBG">
           <h2 class="mb-60">About Me</h2>
       </div>
       <div class="container">
@@ -94,6 +94,7 @@
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>JavaScript</li>
+                    <li>Git</li>
                     <li>React Native and Legacy</li>
                     <li>PostgreSQL</li>
                     <li>Typescript</li>
@@ -106,7 +107,7 @@
                   <p class="lead">I am currently a hair designer transitioning into web and software development. I am always looking to learn new skills and pride myself on picking them up quickly and efficiently. I am creative, ambitious, and self-driven.</p>
               </div>
               <div class="col-md-4">
-                  <p class="lead">I am currently expanding on the skills I have learned in the web development program and also learning C#. Also, I am working on new projects like building a website for a local restaurant and creating an animal shelter page.</p>
+                  <p class="lead">I am currently expanding on the skills I have learned in the web development program and also learning C#. Also, I am working on new projects like building a website for a local restaurant and more.</p>
 
                   <p class="lead">I would be delighted to find a job where I can exercise my artistic eye while implementing the skills I have learned through Eleven Fifty Academy.</p>
 
@@ -123,7 +124,7 @@
 
     <!-- My Portfolio -->
     <section id="portfolio" class="sectionPadding">
-        <div class="container text-center">
+        <div class="container text-center whiteBG">
             <h2 class="mb-60">My Portfolio</h2>
         </div>
         <div class="container">
@@ -179,8 +180,8 @@
                                 </div>
                             </a>
                         </div>
-                        </div>
-                        <div class="potfolio-item" style="position:absolute; left: 180px; top: 320px;">
+                    </div>
+                        <div class="potfolio-item" style="position:absolute; left: 0px; top: 320px;">
                             <div class="potfolio-box">
                                 <a href="https://sgs-hungryhound.herokuapp.com/" title="Hungry Hound">
                                     <div class="portfolio-image-wrap">
@@ -197,7 +198,7 @@
                                 </a>
                             </div>
                             </div>
-                            <div class="potfolio-item" style="position:absolute; left: 580px; top: 320px;">
+                            <div class="potfolio-item" style="position:absolute; left: 390px; top: 320px;">
                                 <div class="potfolio-box">
                                     <a href="https://dundermifflinites.herokuapp.com/" title="Dunder Mifflinites">
                                         <div class="portfolio-image-wrap">
@@ -213,7 +214,58 @@
                                         </div>
                                     </a>
                                 </div>
+                            </div>
+                            <div class="potfolio-item" style="position:absolute; left: 780px; top: 320px;">
+                                <div class="potfolio-box">
+                                    <a href="https://codepen.io/slaydesettle/full/YzwbXNN" title="Second CSS Creature">
+                                        <div class="portfolio-image-wrap">
+                                            <img src="./Assets/CSSFrankensteinTN.png" class="image-thumbnail" alt>
+                                        </div>
+                                        <div class="portfolio-caption-mask">
+                                            <div class="portfolio-caption-text">
+                                                <div class="portfolio-caption-tb-cell">
+                                                    <h5 class="alt-title">CSS Frankenstein</h5>
+                                                    <p>HTML/CSS webpage</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
+                            </div>
+                            <div class="potfolio-item" style="position:absolute; left: 170px; top: 640px;">
+                                <div class="potfolio-box">
+                                    <a href="https://github.com/sgsettle/MadlibConsoleGame" title="Pair Programming Game">
+                                        <div class="portfolio-image-wrap">
+                                            <img src="./Assets/pairProgrammingGameTN.png" class="image-thumbnail" alt>
+                                        </div>
+                                        <div class="portfolio-caption-mask">
+                                            <div class="portfolio-caption-text">
+                                                <div class="portfolio-caption-tb-cell">
+                                                    <h5 class="alt-title">Pair Programming Console Game</h5>
+                                                    <p>C# Console Game</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="potfolio-item" style="position:absolute; left: 600px; top: 640px;">
+                                <div class="potfolio-box">
+                                    <a href="https://github.com/sgsettle/GoldBadgeConsoleAppChallenges" title="Console App Challenges">
+                                        <div class="portfolio-image-wrap">
+                                            <img src="./Assets/consoleAppChallengesTN.png" class="image-thumbnail" alt>
+                                        </div>
+                                        <div class="portfolio-caption-mask">
+                                            <div class="portfolio-caption-text">
+                                                <div class="portfolio-caption-tb-cell">
+                                                    <h5 class="alt-title">Console App Challenges</h5>
+                                                    <p>C# Console App</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
             </div>
         </div>
     </section>
@@ -265,13 +317,14 @@
     </footer>
 </div>
     <!-- Optional JavaScript -->
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="navbarScroll.js"></script>
+    <script type="text/javascript" src="stars.js"></script>
     <!-- <script>
         $(window).scroll(function() {
             $('header').toggleClass('scrolled', $(this).scrollTop() > 423);
         });
     </script> -->
-    <script>
+    <!-- <script>
         $(window).scroll(function() {
             if($(this).scrollTop() > 423) {
                 $('.scrolledHeader').addClass('navColor');
@@ -279,7 +332,7 @@
                 $('.scrolledHeader').removeClass('navColor');
             }
         });
-    </script>
+    </script> -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

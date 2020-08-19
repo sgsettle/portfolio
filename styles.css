@@ -5,6 +5,8 @@ body{
     font-family: 'Archivo Narrow', sans-serif;
 }
 
+/* look at puesdo classes for scrolling */
+
 #pageWrapper{
     position: relative;
     width: 100%;
@@ -23,15 +25,21 @@ body{
     height: 85px;
 }
 
-.scrolledHeader.navColor {
+/* .scrolledHeader.navColor {
     color: purple !important;
 
-}
+} */
 
 .headerInner{
     padding-left: 30px;
     padding-right: 30px;
     position: relative;
+}
+
+.headerInner.scrolled {
+    transition: color 200ms linear;
+    z-index: 1;
+    color: darkviolet !important;
 }
 
 /* NavBar Section */
@@ -55,6 +63,10 @@ a.nav{
     text-decoration: none;
     color: #fff;
 
+}
+
+a.nav:active {
+    color: darkviolet;
 }
 
 a.nav:hover{
@@ -191,9 +203,13 @@ hr{
 
 /* Portfolio Section */
 
+#portfolio {
+    height: 1300px;
+}
+
 .rows{
     position: relative;
-    height: 529.75px;;
+    height: 529.75px;
 }
 
 .portfolio-grid .portfolio-item{
