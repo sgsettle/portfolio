@@ -61,7 +61,8 @@ body{
 
 a.nav{
     text-decoration: none;
-    color: #fff;
+    color: white;
+    text-shadow: 2px 2px 2px darkblue;
 
 }
 
@@ -83,9 +84,13 @@ a.nav:hover{
     color: darkorchid;
 } */
 
+.navBar-scrolled {
+    color: darkviolet;
+}
+
 .navBar ul li{
     display: inline-block;
-    color: #fff;
+    color: white;
     list-style: none;
     text-align: left;
     position: relative;
@@ -99,7 +104,7 @@ a.nav:hover{
 }
 
 #navLink{
-    color: #fff;
+    color: white;
 
 }
 
@@ -314,6 +319,10 @@ h5.alt-title{
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 65px;
     text-shadow: 5px 5px 5px darkblue;
+}
+
+.btn:hover {
+    color: darkviolet;
 }
 
 /* Footer Section */

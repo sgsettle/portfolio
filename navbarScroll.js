@@ -1,3 +1,23 @@
+
+
+// $(function() {
+//     $(window).scroll(function() {
+//       var headerHeight = $('.container').height() + 590;
+//       var windowScroll = $(this).scrollTop();
+
+//       if (windowScroll <= headerHeight) {
+//         $('.container').css({
+//           'transform': 'translate(0px, ' + windowScroll / 2 + '% )'
+//         });
+//       }
+
+// if (windowScroll >= headerHeight) {
+//     $('nav').addClass('navBar-scrolled');
+//   } else {
+//     $('nav').removeClass('navBar-scrolled');
+//   }
+// });
+
 // $(window).scroll(function() {
 // 	var vpHeight = $(window).height();
 //         var isWhite = false;
@@ -71,4 +91,4 @@
 //         }
 //     })
 // });
-
+// })
