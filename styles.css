@@ -202,14 +202,14 @@ h2{
 
 hr{
     border: 0;
-    height: 50px;
+    height: 20px;
     background: url(https://images.unsplash.com/photo-1465101162946-4377e57745c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1657&q=80);
 }
 
 /* Portfolio Section */
 
 #portfolio {
-    height: 1300px;
+    height: 1500px;
 }
 
 .rows{
